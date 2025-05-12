@@ -34,3 +34,6 @@ cd cirkular
 ```bash
 npm install
 ```
+
+---
+Note: The currentUI part was vibe-coded as i was focusing on the core functioning of the app + AI integration. The actual UI is yet to be implemented.
