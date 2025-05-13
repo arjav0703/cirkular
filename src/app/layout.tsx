@@ -19,8 +19,8 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Fontastic Logos",
-  description: "Design amazing logos and banners with our custom font tools.",
+  title: "Cirkular",
+  description: "A modern and sleek way to design.",
   icons: {
     icon: "/favicon.ico",
   },
