@@ -2,7 +2,7 @@
 import localFont from "next/font/local";
 import { motion } from "framer-motion";
 import { useEffect } from "react";
-import Lenis from "@studio-freight/lenis";
+import Lenis from "lenis";
 
 const cirkular = localFont({
   src: "../fonts/cirkular.ttf",
