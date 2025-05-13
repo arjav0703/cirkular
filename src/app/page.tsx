@@ -1,27 +1,10 @@
+import Hero from "@/components/Hero";
 import LogoPreview from "@/components/LogoPreview";
-import localFont from "next/font/local";
-const cirkular = localFont({
-  src: "../fonts/cirkular.ttf",
-  variable: "--font-cirkular",
-});
 
 export default function HomePage() {
   return (
     <div className="flex flex-col items-center min-h-screen p-4 sm:p-6 md:p-8 bg-gradient-to-br from-background to-secondary/30">
-      <header className="max-w-5xl mt-8 mb-10 md:mb-12 text-center h-screen">
-        <div className="flex items-center justify-center gap-3 mb-4">
-          <h1
-            className={`tracking-widest text-6xl sm:text-7xl md:text-9xl font-bold text-primary ${cirkular.className}`}
-          >
-            Cirkular
-          </h1>
-        </div>
-        <p className="arial text-md sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-          Craft stunning text-based logos and banners with live previews,
-          AI-powered design suggestions, and easy export options.
-        </p>
-      </header>
-
+      <Hero />
       <main className="w-full max-w-3xl xl:max-w-4xl px-2">
         <LogoPreview />
       </main>
