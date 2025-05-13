@@ -2,11 +2,10 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
 import { cn } from "@/lib/utils";
-import localFont from "next/font/local";
+import { Geist } from "next/font/google";
 
-const cirkular = localFont({
-  src: "../fonts/cirkular.ttf",
-  variable: "--font-cirkular",
+const geist = Geist({
+  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
@@ -23,7 +22,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning className={cirkular.variable}>
+    <html lang="en" suppressHydrationWarning className={`${geist.className}`}>
       <body
         className={cn("min-h-screen bg-background antialiased", "font-sans")}
       >
